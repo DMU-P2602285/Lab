@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title></title>
 
-
+<!-- ***
+     This CSS is good, well done. 
+     *** -->
 <style>
  p {
    color: white;
@@ -34,11 +36,19 @@ div {
 
 </style>
 </head>
+  
+  <!-- ***
+       You should only have one <body> element, so this first one needs to go.
+       *** -->
    <body>
 
 <body style="background-color: lightpink">
 
+<!-- ***
+     The <center> element has been deprecated. Instead, you should use CSS to apply styles like this.
 
+     Setting text-align:center on the h1 for example would achieve this.
+     *** -->
 <center><h1> About me<h1><center>
 
 <div>
@@ -61,6 +71,13 @@ div {
         into the world was definetley not normal and my parents did not have the
         most wonderful experience either.</p><center>
 
+<!-- ***
+     The images across your site aren't loading. The folder with your images in is called Img, with a capital
+     I. However, in your URLs, you write img with a lowercase i. On your own computer, when you open the file in 
+     the browser, this is fine, as your computers file system sees them both as the same thing.
+
+     However, the GitHub Pages server is case sensitive, so these things are different. 
+     *** -->
 <img style='max-width: 50%' src='img/baby.jpg'  />
 
 <footer>
