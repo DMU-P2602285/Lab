@@ -32,6 +32,9 @@ h1{
   </head>
   <body>
 
+ <!-- ***
+      It's good that you;ve got this meta tag in, though it should be inside the <head> element.
+      *** -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -57,6 +60,18 @@ Hannah Montana and Wizards of Waverly Place.</p>
 <p style="color: blue"> Here is some music which is similar style to what I danced
 to when I did ballet.</p>
 
+  <!-- ***
+       Your audio elements should have at least two source elements, with the audio file in different 
+       file formats. You should also include some text after the <source> elements as a fallback for
+       browsers that don't support the <audio> element. This could helpfully also provide a link
+       to download the mp3 version. 
+       
+       Also, you've added controls, which is good, but you don't need to explicitly set them to true as 
+       you have here. Just including the name of the attribute will set it to true. So, you would just have
+      
+           <audio controls> 
+
+       *** -->
 <audio controls="true">
 <source src="Audio/ballet .wav" type="audio/wav" />
 </audio>
@@ -67,6 +82,13 @@ to when I did ballet.</p>
 
 <img style='max-width: 25%' src='img/balletphoto.jpg' />
 
+  <!-- ***
+       The two sources here are good, though note that your actual video folder has a capital V - Video, so 
+       as with your images, the browser doesn't find these files. Ah, you've not closed your <source> elements
+       either. You need a /> on the end of each one. 
+
+       You've got the fallback for older browsers, but it should go just inside the <video> element, not after it.
+       *** -->
 <video controls="true">
   <source src="video/Ballet.mp4" type="video/mp4"
   <source src="video/Ballet.webm" type="video/webm"
