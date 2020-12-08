@@ -1,5 +1,5 @@
 
-p{
+.synopsis{
 font-size: 15px;
 font-family: Arial, Helvetica,sans-serif;
 font-weight: 400;
@@ -9,7 +9,7 @@ margin-right: 200px;
 margin-left:250px;
 background-color: white;
 border-radius: 4px;
-padding: 20px;
+padding: 10px;
 margin: 10px;
 }
 
