@@ -39,4 +39,22 @@ h3 {
 img{
   background-color: lightgreen;
   }
+
+Img{
+  width: 25%
+    float: left;
+}
+
+section:after{
+  content:"Emma Watson is mostly known for playing the role of 'Hermoine
+  Granger' in Harry potter. After Harry Potter Emma attended Brown university in the states
+  to persue a normal life, it was not until a few months later where she got sent a
+  script through her agent and fell in love with the novel. She attended auditions
+  and managed to get the role of Sam.";
+    
+    display:block;
+  clear:block;
+}
+
+
 </style>
