@@ -20,6 +20,15 @@ h1{
 .Emma {
   padding: 10;
   Text-Align:left;
+    font-size: 15px;
+    font-family: Arial, Helvetica,sans-serif
+    margin-right: 200px;
+    margin-left:250px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+  
 }
 
 .Ezra {
@@ -34,16 +43,7 @@ h1{
 
 
 <style>
-  p {
-    font-size: 15px;
-    font-family: Arial, Helvetica,sans-serif
-    margin-right: 200px;
-    margin-left:250px;
-    background-color: white;
-    border-radius: 4px;
-    padding: 20px;
-    margin: 10px;
-}
+ 
 h3 {
   background-color: lightgreen;
   border-radius: 4px;
