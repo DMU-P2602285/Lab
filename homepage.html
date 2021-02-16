@@ -32,8 +32,10 @@
     function displayRandomImages()
 {
 
-
+      // When you create an array, you can list the items that are in it. This list goes between square brackets [ ].
+      // Here you create an array and start listing its contents. 
      var imageArray = [
+       // each item in the array is an object with three bits of information
      {
 
 
@@ -58,6 +60,7 @@
        width: "200",
        height: "250"
       } ];
+      // this square bracket ^ ends the array, which means your attempt to add another below item causes an error.
       {
        src:"https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/10/0_Cinderella.jpg",
        width: "200",
@@ -90,6 +93,7 @@
 
     var images = document.getElementsByTagName('img');
     var l = images.length;
+  
     for (var p = 0; p < l; p++) {
        images[0].parentNode.removeChild(images[0]);
     }
