@@ -1,110 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <title>Disney Princesses</title>
+    <meta charset="utf-8">
+    <center><title>Disney Princesses</title></center>
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type"text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+    </head>
 
-  <body style="background-color: lightgreen;">
-    <!-- Don't use the <center> tag. Use CSS to style your page instead -->
-    <center><h1>Disney Princesses</h1></center>
-    <!-- moved this inside the body -->
-    <div class="menu">
-      <a class="menuItem" href="homepage.html">homepage</a>
-      <a class="menuItem" href="trailers.html">trailers</a>
-    </div>
 
-    <!-- <body > you should only have one opening body tag -->
+<center><h1>Disney Princesses</h1></center>
+<body style="background-color: lightgreen;">
+<div class="menu">
+<!-- change centre-->
+<a class="menuItem" href="homepage.html">homepage</a>
+<a class="menuItem" href="trailers.html">trailers</a>
+</div>
 
-    <!-- link elements should go in the head section
-<link href="css/style.css" rel="stylesheet" type"text/css" />-->
+<center>
 
-    <center>
-      <h2 style="color: pink;">Random Image Generator</h2>
-      <h4>Press the button to find your favourite Disney Princess</h4>
-      <input type="button" id="button" value="random" onclick="RandomDiv();" />
-    </center>
+<h2 style="color:pink"> Random Image Generator </h2>
+<h4> Press the button to find your favourite Disney Princess </h4>
+<input type="button" id="button" value="change Princess" onclick="RandomDiv();">
 
-    <!-- Don't close the body and start a new one. You should have just one body element
+
+
+</center>
+
+
+
+<div id="container"
+  <div id="princess0" style = "display: none">
+  <img src="Img/Ariel.jpg" alt="Ariel"/>
+  <p>Ariel Practice text hehehe</p>
+</div>
+
+<div id="princess1" style= "display: none">
+  <img src="Img/belle.jpg" alt="Belle"/>
+  <p>Belle practice text lmao</p>
+</div>
+
+<div id="princess2" style= "display: none">
+  <img src="Img/Cinderella.jpg" alt="Cinderella"/>
+  <p>Cinderella practice</p>
+</div>
+
+<div id="princess3" style= "display: none">
+  <img src="Img/Jasmine.jpg" alt="Jasmine"/>
+  <p>Jasmine practice</p>
+</div>
+
+<div id="princess4" style="display: none">
+  <img src="Img/Sleeping Beauty.jpg" alt="Sleeping Beauty"/>
+  <p>Aurora practice</p>
+</div>
+
+<div id="princess5" style="display: none">
+  <img src="Img/snow white.jpg" alt="Snow White"/>
+  <p>Snow White practice</p>
+</div>
+
+<div id="princess6" style="display: none">
+  <img src="Img/tiana.png" alt="tiana"/>
+  <p>tiana practice</p>
+
+</div>
+
+
+ <script type="text/javascript">
+  let thisPrincess = "princess" + Math.floor(Math.random() * 6);
+  document.getElementById(thisPrincess)
+  document.getElementById(thisPrincess).style.display = "block";
+  button.addEventListener{'click',function(){};
+    </script>
+
 </body>
 
-<body>
--->
-
-    <div id="container">
-      <div id="princess0" style="display: none;">
-        <img src="Img/Ariel.jpg" alt="Ariel" />
-        <p>Ariel Practice text hehehe</p>
-      </div>
-
-      <div id="princess1" style="display: none;">
-        <img src="Img/belle.jpg" alt="Belle" />
-        <p>Belle practice text lmao</p>
-      </div>
-
-      <div id="princess2" style="display: none;">
-        <img src="Img/Cinderella.jpg" alt="Cinderella" />
-        <p>Cinderella practice</p>
-      </div>
-
-      <div id="princess3" style="display: none;">
-        <img src="Img/Jasmine.jpg" alt="Jasmine" />
-        <p>Jasmine practice</p>
-      </div>
-
-      <div id="princess4" style="display: none;">
-        <img src="Img/Sleeping Beauty.jpg" alt="Sleeping Beauty" />
-        <p>Aurora practice</p>
-      </div>
-
-      <div id="princess5" style="display: none;">
-        <img src="Img/snow white.jpg" alt="Snow White" />
-        <p>Snow White practice</p>
-      </div>
-
-      <div id="princess6" style="display: none;">
-        <img src="Img/tiana.png" alt="tiana" />
-        <p>tiana practice</p>
-      </div>
-    </div>
-    <!-- you were missing this to close your container div -->
-
-    <!-- script elements go just before your closing </body> element. This is
- partly to make sure that all your HTML elements exist before you try to do
- something with them with javascript. -->
-    <script type="text/javascript">
-      /*
- // Commenting out all of this
-
-
- var ChosenDiv = myarray [Math.random.length()* my array.length)
- myarray[Math.floor(Math.random()*
-   myarray.length)]
- document.getElementById(ChosenDiv).css ("display":"inline-block");
- }
-   toggleAnimation = (evt) => {
-   evt.target.classList.toggle("out");
- };
- document
-   .querySelector(".menu")
-   .addEventListener("click", toggleAnimation);
-}
-
-Mathrandom()* 6
-Math.floor(Math.random()* 6)
-*/
-
-      /* The code below works. However, it gets run once when the page loads. You want it
-to run whenever somebody clicks the button. This means you need to put it in a function,
-and create add an event listener to the button that will run the function when
-somebody clicks on the button. */
-
-      let thisPrincess = "princess" + Math.floor(Math.random() * 6);
-      document.getElementById(thisPrincess);
-      document.getElementById(thisPrincess).style.display = "block";
-    </script>
-  </body>
-  <!-- you should close the body here -->
 </html>
